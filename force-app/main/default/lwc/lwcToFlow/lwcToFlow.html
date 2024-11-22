@@ -1,0 +1,47 @@
+<template>
+    <lightning-card title="Practitioner Information">
+        <div class="slds-m-around_small">
+            <lightning-input 
+                label="SAP Number" 
+                type="text" 
+                name="sapNumber" 
+                value={sapNumber} 
+                onchange={sapNumberChangeHandler} 
+                disabled>
+            </lightning-input>
+
+            <lightning-input 
+                label="Name" 
+                type="text" 
+                name="name" 
+                value={name} 
+                onchange={nameChangeHandler} 
+                disabled>
+            </lightning-input>
+
+            <lightning-textarea 
+                label="Skills" 
+                value={skills} 
+                disabled>
+            </lightning-textarea>
+
+            <lightning-input 
+                label="Practitioner level" 
+                type="text" 
+                name="level" 
+                value={level} 
+                onchange={levelChangeHandler} 
+                disabled>
+            </lightning-input>
+
+            <lightning-input 
+                label="Years of Experience" 
+                type="text" 
+                name="yearsOfExperience" 
+                value={yearsOfExperience} 
+                onchange={yearsOfExperienceChangeHandler} 
+                disabled>
+            </lightning-input>
+        </div>
+    </lightning-card>
+</template>
